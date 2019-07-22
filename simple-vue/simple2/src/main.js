@@ -1,0 +1,24 @@
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+import Vue from 'vue'
+import App from './App'
+import store from './store'
+import $ from 'jquery'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min'
+import './styles/layout.min.css'
+import './styles/themes/blue.min.css'
+import './styles/components.min.css'
+import 'simple-line-icons/css/simple-line-icons.css'
+import 'font-awesome/css/font-awesome.min.css'
+import './styles/animate.min.css'
+
+Vue.config.productionTip = false
+
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  store,
+  components: { App },
+  template: '<App/>'
+})
