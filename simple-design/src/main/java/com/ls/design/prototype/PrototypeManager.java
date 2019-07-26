@@ -32,12 +32,18 @@ public class PrototypeManager {
  * @author: leslie.zhang
  */
 interface Shape extends Cloneable{
+
     /**
      * 克隆
+     * @return Object 返回克隆的对象
+     * @date: 2019年07月22日
+     * @author: leslie.zhang
      */
     public Object clone();
     /**
      * 计算面积
+     * @date: 2019年07月22日
+     * @author: leslie.zhang
      */
     public void countArea();
 }
