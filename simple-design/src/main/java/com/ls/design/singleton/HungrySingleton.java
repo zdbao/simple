@@ -11,7 +11,7 @@ public class HungrySingleton {
     /**
      * 因为饿汉模式是在加载该类时就会直接实例化，对静态变量设置final。因为它实例化后不会再改变。
      */
-    private static final HungrySingleton instance = new HungrySingleton();
+    private static final HungrySingleton INSTANCE = new HungrySingleton();
 
     /**
      * 单例模式必然有个私有的实例化方法(也就是表示不允许用new来显式的去执行该类的实例化)
@@ -22,6 +22,6 @@ public class HungrySingleton {
      * 必须包含一个共有的，因为类已经被实例化，也就无需判断，直接返回即可。
      */
     private static HungrySingleton getInstance(){
-        return instance;
+        return INSTANCE;
     }
 }
