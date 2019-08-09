@@ -18,6 +18,9 @@ package com.ls.design.decorator;
  *
  * 样例： 以房子装修为例，房子即为Component，本身为毛坯房(Concrete Component), 要对其装修(Decorator), 装修成古典风格，西欧风格等(ConcreteDecorator)。
  *
+ * 扩展：
+ *      1. 如果只有一个具体构件而没有抽象构件时，可以让抽象装饰继承具体构件。
+ *      2. 如果只有一个具体装饰时，可以将抽象装饰和具体装饰合并。
  * @date: 2019年08月09日
  * @author: leslie.zhang
  */
