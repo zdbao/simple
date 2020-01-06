@@ -1,1 +1,1 @@
-这是一个eureak server,可以查看注册的客户端信息
+这是一个eureka server,可以查看注册的客户端信息

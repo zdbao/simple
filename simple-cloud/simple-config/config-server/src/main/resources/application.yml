@@ -7,8 +7,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/zdbao/simple-cloud.git #公开库可以不用填写帐号密码
-          search-paths: simple-config/reps #配置文件地址
+          uri: https://github.com/zdbao/simple.git #公开库可以不用填写帐号密码
+          search-paths: simple-cloud/simple-config/reps #配置文件地址
+          force-pull: true #强制从远程库拉取
       label: master
 eureka:
   client:
