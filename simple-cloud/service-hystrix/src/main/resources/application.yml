@@ -1,0 +1,11 @@
+hystrix:
+  #通过设置shareSecurityContext=true,会自动配置一个hystrix并发策略插件挂钩，以将其SecurityContext从主线程注意到Hystrix命令使用的线程。
+  shareSecurityContext: true
+
+spring:
+  application:
+    name: service-hystrix
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
